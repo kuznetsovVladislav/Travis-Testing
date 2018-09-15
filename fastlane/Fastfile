@@ -20,6 +20,8 @@ platform :ios do
 	# Lifecycle
 
 	before_all do
+		get_certificates           # invokes cert
+  		get_provisioning_profile   # invokes sigh
 		create_project_keychain
 		cocoapods(repo_update: true)
 	end
@@ -55,10 +57,11 @@ platform :ios do
 	# Private lanes
 
 	private_lane :create_project_keychain do
+		sh "rm -rf ~/Library/Keychains/Keychain_CITest-db"
 		create_keychain(
       name: "Keychain_CITest",
       password: "password",
-      default_keychain: true,
+      default_keychain: false,
       unlock: true,
       timeout: 3600,
       add_to_search_list: true
@@ -66,14 +69,11 @@ platform :ios do
 	end
 
 	private_lane :delete_project_keychain do
-		delete_keychain(name: "Keychain_CITest")
+		delete_keychain(name: "Keychain_CITest-db")
 	end
 
 	private_lane :build do
 		increment_build_number(build_number: Time.now.strftime("%Y.%m.%d.%H:%M"))
-
-		get_certificates           # invokes cert
-  	get_provisioning_profile   # invokes sigh
 
 		build_app(
 			scheme: ENV["SCHEME"],
