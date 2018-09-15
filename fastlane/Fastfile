@@ -21,7 +21,7 @@ platform :ios do
 
 	before_all do
 		get_certificates           # invokes cert
-  		get_provisioning_profile   # invokes sigh
+  	get_provisioning_profile   # invokes sigh
 		create_project_keychain
 		cocoapods(repo_update: true)
 	end
