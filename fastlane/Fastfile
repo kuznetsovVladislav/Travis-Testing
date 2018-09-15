@@ -1,0 +1,93 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+
+	# Lifecycle
+
+	before_all do
+		create_project_keychain
+		cocoapods(repo_update: true)
+	end
+
+	after_all do
+		delete_project_keychain
+	end
+
+	error do |lane, exception|
+  	delete_project_keychain
+  end
+
+	# Public lanes
+
+	lane :beta_dev do
+		ENV["SCHEME"] = "CITest-development"
+		ENV["CONFIGURATION"] = "Release-dev"
+		build
+	end
+
+	lane :beta_stage do
+		ENV["SCHEME"] = "CITest-stage"
+		ENV["CONFIGURATION"] = "Release-stage"
+		build
+	end
+
+	lane :beta_prod do
+		ENV["SCHEME"] = "CITest-production"
+		ENV["CONFIGURATION"] = "Release-production"
+		build
+	end
+
+	# Private lanes
+
+	private_lane :create_project_keychain do
+		create_keychain(
+      name: "Keychain_CITest",
+      password: "password",
+      default_keychain: true,
+      unlock: true,
+      timeout: 3600,
+      add_to_search_list: true
+    )
+	end
+
+	private_lane :delete_project_keychain do
+		delete_keychain(name: "Keychain_CITest")
+	end
+
+	private_lane :build do
+		increment_build_number(build_number: Time.now.strftime("%Y.%m.%d.%H:%M"))
+
+		get_certificates           # invokes cert
+  	get_provisioning_profile   # invokes sigh
+
+		build_app(
+			scheme: ENV["SCHEME"],
+			export_method: "ad-hoc",
+			export_options: {
+      	compileBitcode: false
+			}
+		)
+
+  	crashlytics(
+    	api_token: "7102dec9570d5d105df6c94a17fc981beef883ea",
+    	build_secret: "6c8d30630bcc65f1038ead8c81a984a622114779a2cde6ed178395ffb6830e11",
+    	groups: ["devs"]
+  	)
+	end
+
+end
