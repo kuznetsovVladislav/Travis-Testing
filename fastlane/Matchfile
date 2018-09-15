@@ -3,7 +3,7 @@ git_url("https://github.com/kuznetsovVladislav/CI-Certificates")
 type("development") # The default type, can be: appstore, adhoc, enterprise or development
 
 app_identifier(["com.testci.test"])
-
+username("developer@softensy.com") # Your Apple Developer Portal username
 
 
 # For all available options run `fastlane match --help`
