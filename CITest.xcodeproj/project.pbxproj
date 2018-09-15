@@ -13,11 +13,16 @@
 		86432ED9214A74C100B34ECA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86432ED8214A74C100B34ECA /* Assets.xcassets */; };
 		86432EDC214A74C100B34ECA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86432EDA214A74C100B34ECA /* LaunchScreen.storyboard */; };
 		86432EF4214A779800B34ECA /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86432EF3214A779800B34ECA /* Environment.swift */; };
+		86432EF8214A82C600B34ECA /* Appfile in Resources */ = {isa = PBXBuildFile; fileRef = 86432EF6214A82C500B34ECA /* Appfile */; };
+		86432EF9214A82C600B34ECA /* Fastfile in Resources */ = {isa = PBXBuildFile; fileRef = 86432EF7214A82C500B34ECA /* Fastfile */; };
+		86DC8979214AE7CE006714E5 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 86DC8978214AE7CE006714E5 /* .travis.yml */; };
 		8B54805705F7782615D6E17B /* Pods_CITest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10BC883A9926039D4446916C /* Pods_CITest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		106DC748FD5C6899EB7640A3 /* Pods-CITest.release-stage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CITest.release-stage.xcconfig"; path = "Pods/Target Support Files/Pods-CITest/Pods-CITest.release-stage.xcconfig"; sourceTree = "<group>"; };
 		10BC883A9926039D4446916C /* Pods_CITest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CITest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61BDEA8D46923740A1120ACE /* Pods-CITest.release-dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CITest.release-dev.xcconfig"; path = "Pods/Target Support Files/Pods-CITest/Pods-CITest.release-dev.xcconfig"; sourceTree = "<group>"; };
 		6C0CEA6F931750550078AECE /* Pods-CITest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CITest.release.xcconfig"; path = "Pods/Target Support Files/Pods-CITest/Pods-CITest.release.xcconfig"; sourceTree = "<group>"; };
 		86432ECE214A74BF00B34ECA /* CITest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CITest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86432ED1214A74BF00B34ECA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -27,7 +32,14 @@
 		86432EDB214A74C100B34ECA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86432EDD214A74C100B34ECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86432EF3214A779800B34ECA /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		86432EF6214A82C500B34ECA /* Appfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Appfile; sourceTree = "<group>"; };
+		86432EF7214A82C500B34ECA /* Fastfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Fastfile; sourceTree = "<group>"; };
+		86DC8978214AE7CE006714E5 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
+		8726AC85F5612966F0CEA9AC /* Pods-CITest.release-production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CITest.release-production.xcconfig"; path = "Pods/Target Support Files/Pods-CITest/Pods-CITest.release-production.xcconfig"; sourceTree = "<group>"; };
 		BE6A22D62AB3A98645DFB893 /* Pods-CITest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CITest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CITest/Pods-CITest.debug.xcconfig"; sourceTree = "<group>"; };
+		E0F9109F651615BB59474153 /* Pods-CITest.debug-production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CITest.debug-production.xcconfig"; path = "Pods/Target Support Files/Pods-CITest/Pods-CITest.debug-production.xcconfig"; sourceTree = "<group>"; };
+		E5FE0912D384B7436330B537 /* Pods-CITest.debug-dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CITest.debug-dev.xcconfig"; path = "Pods/Target Support Files/Pods-CITest/Pods-CITest.debug-dev.xcconfig"; sourceTree = "<group>"; };
+		ECCE4D145B3FD7B9F1EF5C5E /* Pods-CITest.debug-stage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CITest.debug-stage.xcconfig"; path = "Pods/Target Support Files/Pods-CITest/Pods-CITest.debug-stage.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +59,12 @@
 			children = (
 				BE6A22D62AB3A98645DFB893 /* Pods-CITest.debug.xcconfig */,
 				6C0CEA6F931750550078AECE /* Pods-CITest.release.xcconfig */,
+				E5FE0912D384B7436330B537 /* Pods-CITest.debug-dev.xcconfig */,
+				ECCE4D145B3FD7B9F1EF5C5E /* Pods-CITest.debug-stage.xcconfig */,
+				E0F9109F651615BB59474153 /* Pods-CITest.debug-production.xcconfig */,
+				61BDEA8D46923740A1120ACE /* Pods-CITest.release-dev.xcconfig */,
+				106DC748FD5C6899EB7640A3 /* Pods-CITest.release-stage.xcconfig */,
+				8726AC85F5612966F0CEA9AC /* Pods-CITest.release-production.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -54,7 +72,9 @@
 		86432EC5214A74BF00B34ECA = {
 			isa = PBXGroup;
 			children = (
+				86DC8978214AE7CE006714E5 /* .travis.yml */,
 				86432ED0214A74BF00B34ECA /* CITest */,
+				86432EF5214A82C500B34ECA /* fastlane */,
 				86432ECF214A74BF00B34ECA /* Products */,
 				096C25CBDCBC73EBA5623FF2 /* Pods */,
 				DE27A05854986DF7DFE3CFA2 /* Frameworks */,
@@ -83,6 +103,15 @@
 			path = CITest;
 			sourceTree = "<group>";
 		};
+		86432EF5214A82C500B34ECA /* fastlane */ = {
+			isa = PBXGroup;
+			children = (
+				86432EF6214A82C500B34ECA /* Appfile */,
+				86432EF7214A82C500B34ECA /* Fastfile */,
+			);
+			path = fastlane;
+			sourceTree = "<group>";
+		};
 		DE27A05854986DF7DFE3CFA2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +131,7 @@
 				86432ECA214A74BF00B34ECA /* Sources */,
 				86432ECB214A74BF00B34ECA /* Frameworks */,
 				86432ECC214A74BF00B34ECA /* Resources */,
+				86DC8977214ADD07006714E5 /* Fabric */,
 			);
 			buildRules = (
 			);
@@ -150,6 +180,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86DC8979214AE7CE006714E5 /* .travis.yml in Resources */,
+				86432EF9214A82C600B34ECA /* Fastfile in Resources */,
+				86432EF8214A82C600B34ECA /* Appfile in Resources */,
 				86432EDC214A74C100B34ECA /* LaunchScreen.storyboard in Resources */,
 				86432ED9214A74C100B34ECA /* Assets.xcassets in Resources */,
 				86432ED7214A74BF00B34ECA /* Main.storyboard in Resources */,
@@ -159,6 +192,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		86DC8977214ADD07006714E5 /* Fabric */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Fabric;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 7102dec9570d5d105df6c94a17fc981beef883ea 6c8d30630bcc65f1038ead8c81a984a622114779a2cde6ed178395ffb6830e11";
+		};
 		A80A7CA13E7C08A6B78E9CF2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -330,10 +377,12 @@
 		};
 		86432EE1214A74C100B34ECA /* Debug-dev */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE6A22D62AB3A98645DFB893 /* Pods-CITest.debug.xcconfig */;
+			baseConfigurationReference = E5FE0912D384B7436330B537 /* Pods-CITest.debug-dev.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = "2018.09.13.21:38";
 				DEVELOPMENT_TEAM = 38YYV4LCDS;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -347,19 +396,24 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_SWIFT_FLAGS = "-DDEV";
-				PRODUCT_BUNDLE_IDENTIFIER = com.testci.test.CITest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.testci.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6b0165c0-c2d4-4ccd-9241-0aa3ff14c9e4";
+				PROVISIONING_PROFILE_SPECIFIER = ciTestDev;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = "Debug-dev";
 		};
 		86432EE2214A74C100B34ECA /* Release-dev */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C0CEA6F931750550078AECE /* Pods-CITest.release.xcconfig */;
+			baseConfigurationReference = 61BDEA8D46923740A1120ACE /* Pods-CITest.release-dev.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = "2018.09.13.21:38";
 				DEVELOPMENT_TEAM = 38YYV4LCDS;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -373,10 +427,13 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_SWIFT_FLAGS = "-DDEV";
-				PRODUCT_BUNDLE_IDENTIFIER = com.testci.test.CITest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.testci.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "af32d199-ee1e-427f-9aab-c8e24c7be8b1";
+				PROVISIONING_PROFILE_SPECIFIER = ciTestAdHoc;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = "Release-dev";
 		};
@@ -443,10 +500,12 @@
 		};
 		86432EE4214A755E00B34ECA /* Debug-production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE6A22D62AB3A98645DFB893 /* Pods-CITest.debug.xcconfig */;
+			baseConfigurationReference = E0F9109F651615BB59474153 /* Pods-CITest.debug-production.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = "2018.09.13.21:38";
 				DEVELOPMENT_TEAM = 38YYV4LCDS;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -460,10 +519,13 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_SWIFT_FLAGS = "-DPROD";
-				PRODUCT_BUNDLE_IDENTIFIER = com.testci.test.CITest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.testci.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6b0165c0-c2d4-4ccd-9241-0aa3ff14c9e4";
+				PROVISIONING_PROFILE_SPECIFIER = ciTestDev;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = "Debug-production";
 		};
@@ -530,10 +592,12 @@
 		};
 		86432EE6214A756100B34ECA /* Debug-stage */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE6A22D62AB3A98645DFB893 /* Pods-CITest.debug.xcconfig */;
+			baseConfigurationReference = ECCE4D145B3FD7B9F1EF5C5E /* Pods-CITest.debug-stage.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = "2018.09.13.21:38";
 				DEVELOPMENT_TEAM = 38YYV4LCDS;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -547,10 +611,13 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_SWIFT_FLAGS = "-DSTAGE";
-				PRODUCT_BUNDLE_IDENTIFIER = com.testci.test.CITest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.testci.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6b0165c0-c2d4-4ccd-9241-0aa3ff14c9e4";
+				PROVISIONING_PROFILE_SPECIFIER = ciTestDev;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = "Debug-stage";
 		};
@@ -611,10 +678,12 @@
 		};
 		86432EE8214A756900B34ECA /* Release-stage */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C0CEA6F931750550078AECE /* Pods-CITest.release.xcconfig */;
+			baseConfigurationReference = 106DC748FD5C6899EB7640A3 /* Pods-CITest.release-stage.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = "2018.09.13.21:38";
 				DEVELOPMENT_TEAM = 38YYV4LCDS;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -628,10 +697,13 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_SWIFT_FLAGS = "-DSTAGE";
-				PRODUCT_BUNDLE_IDENTIFIER = com.testci.test.CITest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.testci.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "af32d199-ee1e-427f-9aab-c8e24c7be8b1";
+				PROVISIONING_PROFILE_SPECIFIER = ciTestAdHoc;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = "Release-stage";
 		};
@@ -692,10 +764,12 @@
 		};
 		86432EEA214A756B00B34ECA /* Release-production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C0CEA6F931750550078AECE /* Pods-CITest.release.xcconfig */;
+			baseConfigurationReference = 8726AC85F5612966F0CEA9AC /* Pods-CITest.release-production.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = "2018.09.13.21:38";
 				DEVELOPMENT_TEAM = 38YYV4LCDS;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -709,10 +783,13 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_SWIFT_FLAGS = "-DPROD";
-				PRODUCT_BUNDLE_IDENTIFIER = com.testci.test.CITest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.testci.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "af32d199-ee1e-427f-9aab-c8e24c7be8b1";
+				PROVISIONING_PROFILE_SPECIFIER = ciTestAdHoc;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = "Release-production";
 		};
