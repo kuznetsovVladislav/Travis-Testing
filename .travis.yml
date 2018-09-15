@@ -5,6 +5,8 @@ env:
     secure: ADve9fqlxX5hqprLeM1wR40JyA+cpNBu8EHrjN2FsWKp+knoPxuWiKWPcvQlta2QmYn/KJRzgCi7ycjrOZEexokVOdjcm6KmTjPa1PMPozBKgev6XOENaAtYIxVO5bWhqkCtpRwSdSdwXEN+8HxYk9/OU5f/vfczZYUwDd/gEpFFuWSB+gb1nthP/MqvzKuyVmhbwQ9zG+OEBamiqCBKUsil3kHK/SEeNYFK7P3mCKfs16MQhFH5bnkdOo1KzLX+H9EzcSkJxYtImmUzWf5rNIL9Z1qpMfDsBXhfNRNHNrtKVaNnzMBOrv6cjQjkWB+TNIh5X/VhQ9+c43eB+dBT2F23akv0ox145ifkzRvbVNss5VAUl+Pgj2LXeSU5ubg+MxioGVu8Fr9nNQaE+NalLJ0XavtnujYx89IecakxW90XFRzdTIDomuXXK/VnRjyq+c3XRvKlsod1fshshH1vHoZmi2VcYyKJMX8glPKSrW4tHowBKetaDt+sGQXvUeiV0LRQSFUqF7p4iQ8YZK38FcaqnGVVDBqPg36cvPKnKln5S6fVEINxdy01DQJ2gvvwx4azoR+MGCnkmwvYEm1Rgmu8H6lwP/ozE9cbbxcjsURJ6gBipQLd2q+ON+Ycaw90Cs6awb0bG2FJQyO5EhqKiPR5rbBSupNwvc0QWzii3II=
 
 before_install:
+  - gem install xcov --no-ri --no-rdoc --no-document
+  - gem update fastlane --no-ri --no-rdoc --no-documen
   echo -e "machine github.com\n  login $CI_USER_TOKEN" >> ~/.netrc
 
 script:
